@@ -68,7 +68,7 @@ public class Q3_Task21 {
 		if (middleText.equals("MIDDLE")) {
 			System.out.println("The middle frame has the text: " + middleText);
 		} else {
-			System.out.println("The left frame has no text MIDDLE");
+			System.out.println("The middle frame has no text MIDDLE");
 		}
 
 		// Switching back to the top frame
@@ -85,13 +85,10 @@ public class Q3_Task21 {
 		// Verifying that the right frame has the text "RIGHT"
 		System.out.println("----------------------------------------------");
 		if (rightText.equals("RIGHT")) {
-			System.out.println("The middle frame has the text: " + rightText);
+			System.out.println("The right frame has the text: " + rightText);
 		} else {
-			System.out.println("The left frame has no text RIGHT");
+			System.out.println("The right frame has no text RIGHT");
 		}
-
-		// Switching back to the top frame
-		driver.switchTo().parentFrame();
 
 		// Switching to the default content
 		driver.switchTo().defaultContent();
@@ -107,13 +104,10 @@ public class Q3_Task21 {
 		// Verifying that the bottom frame has the text "BOTTOM"
 		System.out.println("----------------------------------------------");
 		if (bottomText.equals("BOTTOM")) {
-			System.out.println("The middle frame has the text: " + bottomText);
+			System.out.println("The bottom frame has the text: " + bottomText);
 		} else {
-			System.out.println("The left frame has no text BOTTOM");
+			System.out.println("The bottom frame has no text BOTTOM");
 		}
-
-		// Switching back to the default content
-		driver.switchTo().defaultContent();
 
 		// Getting the current URL and validating whether the text "nested_frames" is
 		// present
